@@ -1,0 +1,17 @@
+<div class="alert alert-info">
+    <div class="container">
+         <div class="row">
+             <div class="col-md-4">
+                 <h3 class="sarthak-clickable" [routerLink]="['/home']">Chota Bheem</h3>
+             </div>
+             <div class="col-md-8">
+                
+                <form (submit)="submitHandler($event)">
+                    <input type="text" name="queryTerm" [(ngModel)]="queryTerm" autofocus placeholder="Search to Kr" class="form-control">
+                </form>
+
+             </div>
+         </div>
+
+    </div>
+</div>

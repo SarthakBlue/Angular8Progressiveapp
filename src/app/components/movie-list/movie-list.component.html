@@ -1,0 +1,13 @@
+<div class="row">
+        <div  class="card col-md-4 col-sm-6" *ngFor="let m of movies"> 
+            <div class="alert alert-success sarthak-clickable"
+             [routerLink]="['/movie-details',m.imdbID]"
+            >
+                <div class="card-body">
+                    <h5 class="card-title">Title: {{m.Title}}</h5>
+                    <p>{{m.Year}}</p>
+                    <img [src]="m.Poster" [alt]="m.Title" class="card-img-top">
+                </div>                
+            </div>
+        </div>
+</div>
